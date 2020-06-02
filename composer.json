@@ -1,0 +1,36 @@
+{
+  "name": "mach/currency",
+  "description": "A currency converter for Laravel",
+  "license": "MIT",
+  "keywords": ["laravel", "mach", "currency", "converter"],
+  "authors": [
+    {
+      "name": "Alina Velea",
+      "email": "alina.velea@machteamsoft.ro"
+    }
+  ],
+  "require": {
+    "php": ">=7",
+    "illuminate/support": "^5.5|^6|^7"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Mach\\Currency\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Mach\\Currency\\ServiceProvider"
+      ],
+      "aliases": {
+        "MachCurrency": "Mach\\Currency\\Facade"
+      }
+    }
+  },
+  "minimum-stability": "dev"
+}
